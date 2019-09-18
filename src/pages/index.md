@@ -1,14 +1,12 @@
 ---
 templateKey: index-page
-path: /
 title: MANUELE ONOFRI WEBSITE
-image: /img/home-jumbotron.jpg
-heading: Manuele Onofri Website
-subheading: 'JavaScript Developer, with a strong interest in React and Gatsby'
+image: /img/banner.jpg
+heading: 'Hi, i''m manuele'
+subheading: 'I''m a JavaScript Developer, with a strong interest in React and Gatsby'
 mainpitch:
-  title: Welcome to my website
-  description: >
-    Kaldi is the coffee store for everyone.
+  title: Manuele Onofri
+  description: JavaScript developer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
