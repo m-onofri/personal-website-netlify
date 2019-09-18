@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-=======
+path: /
 title: MANUELE ONOFRI WEBSITE
 image: /img/home-jumbotron.jpg
 heading: Manuele Onofri Website
