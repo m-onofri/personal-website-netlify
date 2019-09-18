@@ -1,11 +1,12 @@
 ---
 templateKey: index-page
-title: Manuele Onofri Webpage
+=======
+title: MANUELE ONOFRI WEBSITE
 image: /img/home-jumbotron.jpg
-heading: Manuele Onofri Webpage
-subheading: Personal website portfolio and blog
+heading: Manuele Onofri Website
+subheading: 'JavaScript Developer, with a strong interest in React and Gatsby'
 mainpitch:
-  title: Why Kaldi
+  title: Welcome to my website
   description: >
     Kaldi is the coffee store for everyone.
 description: >-
@@ -58,3 +59,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
