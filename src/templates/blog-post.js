@@ -17,15 +17,20 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
+    <article className="section">
+      {helmet || ''} 
+      <section 
+        className="wrapper style4 container"
+        style={{marginTop: `4rem`}}
+      >
+        <div className="content">
+          <section>
+            <header>
+              <h2>
+              <strong>{title}</strong>
+            </h2>
             <p>{description}</p>
+            </header>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -39,10 +44,10 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-          </div>
+          </section>
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
   )
 }
 
