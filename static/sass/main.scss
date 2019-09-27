@@ -800,6 +800,11 @@ $pattern-background-size: 25em;
 		width: 100%;
 		z-index: 10000;
 
+		.navbar-brand {
+			display: flex;
+			justify-content: space-between;
+		}
+
 		h1 {
 			font-weight: 900;
 			margin: 0;
@@ -860,14 +865,13 @@ $pattern-background-size: 25em;
 
 		nav {
 			letter-spacing: 0.075em;
-			position: absolute;
-			right: 1.5em;
 			text-transform: uppercase;
 			top: 0.75em;
 
 			ul {
 				list-style: none;
 				padding-left: 0;
+				margin-bottom: 0;
 
 				li {
 					display: inline-block;
@@ -1415,11 +1419,28 @@ $pattern-background-size: 25em;
 
 		/* Header */
 
-			// #header {
-			// 	display: none;
-			// }
 			#navMenu {
 				display: none;
+			}
+
+			#header .navbar-brand {
+				display: block;
+			}
+
+			#header.alt nav.is-active {
+				display: block;
+				width: 100%;
+				padding-top: 1rem;
+
+				ul {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+
+					li {
+						text-align: center;
+					}
+				}
 			}
 
 			#header .navbar-burger {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
+ 
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -37,8 +37,7 @@ const Navbar = class extends React.Component {
         className="alt"
         style={{
           backgroundColor: "#1c2021",
-          opacity: "0.75",
-          paddingBottom: "2rem"
+          opacity: "0.75"
         }}
       >
         <div className="navbar-brand">
@@ -57,14 +56,17 @@ const Navbar = class extends React.Component {
             <span />
             <span />
           </div>
+          <nav 
+            id="navMenu"
+            className={`${this.state.navBarActiveClass}`}
+          >
+            <ul className="navbar-start has-text-centered">
+              <li><Link className="navbar-item" to="/products">Portfolio</Link></li>
+              <li><Link className="navbar-item" to="/blog">Blog</Link></li>
+              <li><Link className="navbar-item" to="/contact">Contact</Link></li>
+            </ul>
+          </nav>
         </div>
-        <nav id="navMenu">
-          <ul className="navbar-start has-text-centered">
-            <li><Link className="navbar-item" to="/products">Portfolio</Link></li>
-            <li><Link className="navbar-item" to="/blog">Blog</Link></li>
-            <li><Link className="navbar-item" to="/contact">Contact</Link></li>
-          </ul>
-        </nav>
     </header>
     )
   }
