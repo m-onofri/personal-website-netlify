@@ -33,27 +33,16 @@ export const IndexPageTemplate = ({
 				<h2>{mainpitch.title}</h2>
 			</header>
 			<p>{mainpitch.description}</p>
-			<footer>
-				<ul className="buttons stacked">
-					<li><Link to="#main" className="button fit scrolly">Tell Me More</Link></li>
-				</ul>
-			</footer>
 		</div>
 	</section>
 
 		
 	<article id="main">
-
-		<header className="special container">
-			<span className="icon solid fa-chart-bar"></span>
-			<h2>{heading}</h2>
-			<p>{subheading}</p>
-		</header>
 	
 		<section className="wrapper style3 container special">
 
 			<header className="major">
-				<h2><strong>MY PORTFOLIO</strong></h2>
+				<h2><strong>MY PROJECTS</strong></h2>
 			</header>
 
 			<PortfolioFeatures gridItems={intro.blurbs} />
