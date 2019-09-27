@@ -809,6 +809,55 @@ $pattern-background-size: 25em;
 			}
 		}
 
+		.navbar-burger {
+			color: #4a4a4a;
+			cursor: pointer;
+			display: none;
+			position: absolute;
+			right: 2rem;
+			top: 2.5rem;
+			width: 3.25rem;
+		}
+		.navbar-burger span {
+			background-color: #fff;
+			display: block;
+			height: 2px;
+			left: calc(50% - 8px);
+			position: absolute;
+			-webkit-transform-origin: center;
+					transform-origin: center;
+			-webkit-transition-duration: 86ms;
+					transition-duration: 86ms;
+			-webkit-transition-property: background-color, opacity, -webkit-transform;
+			transition-property: background-color, opacity, -webkit-transform;
+			transition-property: background-color, opacity, transform;
+			transition-property: background-color, opacity, transform, -webkit-transform;
+			-webkit-transition-timing-function: ease-out;
+					transition-timing-function: ease-out;
+			width: 22px;
+		}
+		.navbar-burger span:nth-child(1) {
+		top: calc(50% - 8px); }
+		.navbar-burger span:nth-child(2) {
+		top: calc(50% - 1px); }
+		.navbar-burger span:nth-child(3) {
+		top: calc(50% + 6px); }
+		.navbar-burger:hover {
+			background-color: rgba(0, 0, 0, 0.05); 
+		}
+		.navbar-burger.is-active span:nth-child(1) {
+			-webkit-transform: translateY(7px) rotate(45deg);
+			transform: translateY(7px) rotate(45deg); 
+		}
+		.navbar-burger.is-active span:nth-child(2) {
+			opacity: 0; 
+		}
+		.navbar-burger.is-active span:nth-child(3) {
+			-webkit-transform: translateY(-7px) rotate(-45deg);
+			transform: translateY(-7px) rotate(-45deg); 
+		}
+		  
+
 		nav {
 			letter-spacing: 0.075em;
 			position: absolute;
@@ -1366,8 +1415,15 @@ $pattern-background-size: 25em;
 
 		/* Header */
 
-			#header {
+			// #header {
+			// 	display: none;
+			// }
+			#navMenu {
 				display: none;
+			}
+
+			#header .navbar-burger {
+				display: block;
 			}
 
 		/* Banner */
