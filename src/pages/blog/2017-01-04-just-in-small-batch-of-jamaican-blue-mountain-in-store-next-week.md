@@ -1,34 +1,30 @@
 ---
-templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
-featuredpost: true
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+templateKey: blog-post
+title: Let's start!
+date: 2018-10-06T07:04:10.000Z
+description: Why I decided to start this blog and about which topics I will write here.
+featuredpost: false
+featuredimage: /img/chemex.jpg
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - coding
 ---
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+This is my first attempts writing a blog, and in this first post I would like o explain the main goals of this blog and the main topics I will talk about.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+## What topics I will talk about?
+As I said, the general topic of this blog is coding.
 
-## A little history
+The main coding languages I'm studying are JavaScript and PHP. About JavaScript, other than the language by itself, I'm very interested in the React library and the framework Gatsby. Regarding PHP, I'm mainly interested in its use in many CMS like WordPress and in frameworks like Laravel.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+Of course, I will write also about CSS and HTML, since they represent a sort of foundation in web development.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+## So, why this blog?
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+Well, the main reason I decided to start this blog as an help to my efforts in learning coding.
 
-## What you need to know before trying
+Basically, I think that to actually learn to do coding, it is not enough to just study some manuals or tutorials and put into practice what you've been learned in some projects. These steps are certainly important, but it is equally important to try to explain what you've been learned as clearly as possible.
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+Another reason is that I would like to have a sort of reference of what I have learned, so if I need to recheck some arguments in a later time, I can search that in this blog.
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+Finally, I hope that these notes of mine can be of some help to other people who are studying coding, as well as countless blog posts have been useful to me (and continue to be so) in studying coding.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
