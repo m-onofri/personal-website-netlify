@@ -22,7 +22,7 @@ var a = 2;
 let b = 2;
 const c = 2;
 ```
-
+<br>
 All these three keywords allow you to initialize a new variable, but according to the keyword that you choose, the variable will have particular characteristics.
 
 ## const cannot be reassigned
@@ -38,7 +38,7 @@ console.log(a) //5
 console.log(b) //5
 console.log(c) //2
 ```
-
+<br>
 In this example we can see the main difference between const and var/let: a variable initialized with const can't be reassign to a new value; if you try, an error was throwed.
 Actually this doesn't mean that you can't modify the value assigned to a const variable:
 
@@ -47,7 +47,7 @@ const person = {name: "John"};
 person.name = "Robert";
 console.log(person.name) //Robert
 ```
-
+<br>
 ## Block Scope
 
 Let and const are both block and function scope while var is only function scope.
@@ -61,7 +61,7 @@ for (let i=0; i<10; i++) {
 console.log(i); // ReferenceError
 console.log(a); // ReferenceError
 ```
-
+<br>
 As you can see in this example, const and let variables initialized inside a block are not accessible from the outside; that is, they are accessible only inside the block scope.
 Probably this can seem a very subtle difference, but it gets two main advantages:
 - it allows you to write more neat and ordered code, in compliance with the PRINCIPLE OF THE LEAST PRIVILEGE. This principle says that you should expose only what is minimally necessary, and in fact we basically hide variables i and a from the rest of the program.
@@ -80,7 +80,7 @@ function multiplicationTable(n) {
   
 console.log(multiplicationTable(10)(2)); //[22,22,22,22,22,22,22,22,22,22]
 ```
-
+<br>
 You could expect that the result will be [2,4,6,8,10,12,14,16,18,20]; instead, if you try to run this code, you will obtain the following result: [22,22,22,22,22,22,22,22,22,22].
 This happens because, since the variable i is not block scoped, JavaScript hoists this variable at the top of the function block:
 
@@ -96,6 +96,7 @@ function multiplicationTable(n) {
   }
 }
 ```
+<br>
 so at the time we run the last line of the program in the example, the value of i is 11.
 The easier way to fix this issue, is to use let to initialize and declare the variable i:
 
@@ -112,7 +113,7 @@ function multiplicationTable(n) {
   
 console.log(multiplicationTable(10)(2)); //[2,4,6,8,10,12,14,16,18,20];
 ```
-
+<br>
 Basically, let rebinds the variable i to each iteration of the for loop, each time reassigning it with the updated value of i.
 
 ## Hoisting
@@ -128,7 +129,7 @@ const a = 5;
 console.log(a); // ReferenceError
 let a = 5;
 ``` 
-
+<br>
 ## Conclusion
 Personally, I prefer to use const whenever I can, while I use let only when I know that a specific variable will be reassigned in a later time. A typical example can be an index variable in a for loop (see Example 4). 
 
