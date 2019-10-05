@@ -10,7 +10,7 @@ tags:
 ---
 ![chemex](/img/chemex.jpg)
 
-This is my first attempts writing a blog, and in this first post I would like o explain the main goals of this blog and the main topics I will talk about.
+This is my first attempts writing a blog, and in this first post I would like to explain the main goals of this blog and the main topics I will talk about.
 
 ## What topics I will talk about?
 As I said, the general topic of this blog is coding.
