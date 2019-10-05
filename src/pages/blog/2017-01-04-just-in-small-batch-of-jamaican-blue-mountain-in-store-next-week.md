@@ -8,6 +8,7 @@ featuredimage: /img/chemex.jpg
 tags:
   - coding
 ---
+![chemex](/img/chemex.jpg)
 
 This is my first attempts writing a blog, and in this first post I would like o explain the main goals of this blog and the main topics I will talk about.
 
