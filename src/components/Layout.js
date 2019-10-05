@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 //import './all.sass'
 import '../../static/css/main.min.css'
+import '../../node_modules/prismjs/themes/prism-dark.css'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from "gatsby"
 
