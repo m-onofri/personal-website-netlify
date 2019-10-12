@@ -42,19 +42,20 @@ npm install -g nodemon
 
 5)    Create a file server.js in the root folder and write the following code:
 ```javascript
-const express = require('express');
+const express = require('express');
 
 require('dotenv').config();
 
-const app = express();
-const port = process.env.PORT || 5000;
+const app = express();
+const port = process.env.PORT || 5000;
 
-app.use('/', require('./routes/testAPI'));
+app.use('/', require('./routes/testAPI'));
 
-app.listen(port, () => {
-    console.log('Server is running on port: ${port}');
+app.listen(port, () => {
+  console.log('Server is running on port: ${port}');
 });
 ```
+
 6) Create a file .env in the root folder. So far it remains empty, but inside this file you can save all your environment variables.
 
 7) In the root folder create a new folder called routes; inside this folder, create a file called testAPI.js and write the following code:
