@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: How to setp a server with node.js and express.js
+title: How to setup a server with node.js and express.js
 date: 2019-10-12T13:48:10.000Z
 description: |
   This is how you can develop a very simple server with Node.js and Express.js.
@@ -57,7 +57,7 @@ app.use('/', require('./routes/testAPI'));
 
 //It starts the server 
 app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
+    console.log('Server is running on port: ${port}');
 });
 ```
 6) Create a file .env in the root folder. So far it remains empty, but inside this file you can save all your environment variables.
