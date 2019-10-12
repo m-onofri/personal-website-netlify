@@ -19,28 +19,37 @@ Node.js is a JavaScript runtime environment that allows to use JavaScript to wri
 
 You can clone or download my Github project here, or you can follow this simple tutorial.
 
-1) Check if node is installed on your computer; if not, install it.
+1. Check if node is installed on your computer; if not, install it.
+2. In your terminal, select your folder project and run the command:
 
-2) In your terminal, select your folder project and run the command:
-```javascript 
+
+```
 npm init
 ```
+
 and follow the instructions to create the package.json file.
 
-3) Run the following command to install some basic dependancies:
-```javascript
+3. Run the following command to install some basic dependancies:
+
+
+```
 npm install express dotenv
 ```
-- Express is a lightweight and fast web framework for node.js.
-- dotenv loads environment variables from a .env file into a process.env
 
-4) Run also the following command to install nodemon:
-```javascript
+* Express is a lightweight and fast web framework for node.js.
+* dotenv loads environment variables from a .env file into a process.env
+
+4. Run also the following command to install nodemon:
+
+
+```
 npm install -g nodemon
 ```
-- Nodemon automatically restart the node application when file changes in the directory are detected.
 
-5)    Create a file server.js in the root folder and write the following code:
+* Nodemon automatically restart the node application when file changes in the directory are detected.
+
+5. Create a file server.js in the root folder and write the following code:
+
 ```javascript
 const express = require('express');
 
@@ -56,9 +65,9 @@ app.listen(port, () => {
 });
 ```
 
-6) Create a file .env in the root folder. So far it remains empty, but inside this file you can save all your environment variables.
+6. Create a file .env in the root folder. So far it remains empty, but inside this file you can save all your environment variables.
+7. In the root folder create a new folder called routes; inside this folder, create a file called testAPI.js and write the following code:
 
-7) In the root folder create a new folder called routes; inside this folder, create a file called testAPI.js and write the following code:
 ```javascript
 const express = require('express');
 const router = express.Router();
@@ -70,8 +79,11 @@ router.get('/', (req, res) => res.send('test route'));
 
 module.exports = router;
 ```
-6) Now in your terminal run the following command:
-```javascript
+
+8. Now in your terminal run the following command:
+
+```
 run nodemon server
 ```
+
 and check if the server works. Open a browser and go to localhost:5000. If the server works fine, you should see the words “test route” on the screen.
