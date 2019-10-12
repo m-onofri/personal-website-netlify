@@ -1,33 +1,81 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
+title: How to setp a server with node.js and express.js
+date: 2019-10-12T13:48:10.000Z
+description: |
+  This is how you can develop a very simple server with Node.js and Express.js.
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
 tags:
-  - flavor
-  - tasting
+  - javascript
+  - node
+  - server
+  - boilerplate
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+In this very simple tutorial I will show how simple is creating a server using Node.js
+Node.js is a JavaScript runtime environment that allows to use JavaScript to write code that can be executed server side. So you can write all your frontend and backend code in JavaScript.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+You can clone or download my Github project here, or you can follow this simple tutorial.
 
-## What the updates mean to you
+1) Check if node is installed on your computer; if not, install it.
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+2) In your terminal, select your folder project and run the command:
+```javascript 
+npm init
+```
+and follow the instructions to create the package.json file.
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
+3) Run the following command to install some basic dependancies:
+```javascript
+npm install express dotenv
+```
+- Express is a lightweight and fast web framework for node.js.
+- dotenv loads environment variables from a .env file into a process.env
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+4) Run also the following command to install nodemon:
+```javascript
+npm install -g nodemon
+```
+- Nodemon automatically restart the node application when file changes in the directory are detected.
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+5)    Create a file server.js in the root folder and write the following code:
+```javascript
+// import express in your app
+const express = require('express');
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+
+require('dotenv').config();
+
+//create the express server
+const app = express();
+const port = process.env.PORT || 5000;
+
+//set the route for the root URL
+app.use('/', require('./routes/testAPI'));
+
+//It starts the server 
+app.listen(port, () => {
+    console.log(`Server is running on port: ${port}`);
+});
+```
+6) Create a file .env in the root folder. So far it remains empty, but inside this file you can save all your environment variables.
+
+7) In the root folder create a new folder called routes; inside this folder, create a file called testAPI.js and write the following code:
+```javascript
+const express = require('express');
+const router = express.Router();
+
+//@route GET /
+//@desc test route
+//@access Public
+router.get('/', (req, res) => res.send('test route'));
+
+module.exports = router;
+```
+6) Now in your terminal run the following command:
+```javascript
+run nodemon server
+```
+and check if the server works. Open a browser and go to localhost:5000. If the server works fine, you should see the words “test route” on the screen.
