@@ -45,7 +45,7 @@ npm install -g nodemon
 // import express in your app
 const express = require('express');
 
-
+//import dotenv in your app
 require('dotenv').config();
 
 //create the express server
