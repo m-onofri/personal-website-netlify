@@ -42,20 +42,15 @@ npm install -g nodemon
 
 5)    Create a file server.js in the root folder and write the following code:
 ```javascript
-// import express in your app
 const express = require('express');
 
-//import dotenv in your app
 require('dotenv').config();
 
-//create the express server
 const app = express();
 const port = process.env.PORT || 5000;
 
-//set the route for the root URL
 app.use('/', require('./routes/testAPI'));
 
-//It starts the server 
 app.listen(port, () => {
     console.log('Server is running on port: ${port}');
 });
